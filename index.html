@@ -17,6 +17,7 @@
         <span>REBICONN</span>
       </a>
 
+      <!-- Desktop links -->
       <nav class="nav-links" aria-label="Primary">
         <a href="./solutions.html">Solutions</a>
         <a href="./products.html">Products</a>
@@ -25,53 +26,89 @@
         <a href="./contact.html" class="btn btn-primary">Request Demo</a>
       </nav>
 
-      <a class="btn mobile-toggle" href="./contact.html">Request Demo</a>
+      <!-- Mobile button -->
+      <button class="mobile-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰ Menu
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
+      <div class="container">
+        <a href="./solutions.html">Solutions</a>
+        <a href="./products.html">Products</a>
+        <a href="./research.html">Research</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="btn btn-primary" style="width:fit-content;">Request Demo</a>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (Komodo-style using your wave background) -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="badge">AI for Pharma • Healthcare • Research</span>
-        <h1 class="h1">AI that moves pharma decisions <span style="opacity:.95">from reports to real-time</span>.</h1>
-        <p class="sub">
-          Rebiconn delivers secure, enterprise AI solutions for pharmaceutical teams and healthcare professionals—
-          from prescription intelligence and market analytics to research automation and clinical insight tools.
-        </p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="./contact.html">Request a Pilot</a>
-          <a class="btn" href="./products.html">Explore RxIntel™</a>
-        </div>
+    <div class="container" style="max-width:860px">
+      <span class="badge">AI • Pharmaceutical Intelligence • Research</span>
 
-        <div class="kpis">
-          <div class="kpi">
-            <strong>4–6 weeks</strong>
-            <span>to launch a paid pilot MVP</span>
-          </div>
-          <div class="kpi">
-            <strong>Excel → AI</strong>
-            <span>built for BD pharma workflows</span>
-          </div>
-        </div>
+      <h1 class="h1">
+        Powering Intelligent
+        <br>
+        Pharmaceutical Innovation
+      </h1>
+
+      <p class="sub">
+        Rebiconn delivers AI-driven solutions that transform prescription analytics,
+        market intelligence, and research workflows into real-time, actionable insight.
+      </p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="./contact.html">Request Demo</a>
+        <a class="btn" href="./solutions.html">View Solutions</a>
       </div>
 
+      <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+        <span class="badge">Enterprise-ready</span>
+        <span class="badge">Secure & Scalable</span>
+        <span class="badge">Built for Bangladesh Pharma</span>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi">
+          <strong>4–6 weeks</strong>
+          <span>to launch a paid pilot MVP</span>
+        </div>
+        <div class="kpi">
+          <strong>Excel → AI</strong>
+          <span>works with real BD pharma workflows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOVED BELOW (the “Rebiconn AI Platform” panel) -->
+  <section class="section" style="padding-top:30px;">
+    <div class="container">
       <div class="panel">
-        <h3 style="margin:0 0 8px">Rebiconn AI Platform</h3>
-        <p class="muted" style="margin:0 0 12px;line-height:1.7">
-          A unified layer that turns field, clinical, and market signals into actionable intelligence—without heavy integrations.
+        <h2 class="h2" style="margin:0;">Rebiconn AI Platform</h2>
+        <p class="muted" style="margin-top:10px;line-height:1.7;max-width:80ch">
+          A unified layer that turns field, clinical, and market signals into actionable intelligence —
+          <strong style="color:rgba(234,240,255,.92)">without heavy integrations</strong>.
         </p>
 
-        <div class="grid-2">
+        <div class="grid-2" style="margin-top:16px">
           <div class="card">
             <span class="badge">Data + Analytics</span>
             <h3>Pharma Intelligence</h3>
-            <p class="muted">Product performance, territory insights, doctor segmentation, competitor movement.</p>
+            <p class="muted">
+              Product performance, territory insights, doctor segmentation, competitor movement.
+            </p>
           </div>
+
           <div class="card">
             <span class="badge">NLP + GenAI</span>
             <h3>Insight Assistant</h3>
-            <p class="muted">Ask questions in natural language. Get structured answers, charts, and summaries.</p>
+            <p class="muted">
+              Ask questions in natural language. Get structured answers, charts, and summaries.
+            </p>
           </div>
         </div>
       </div>
@@ -143,43 +180,13 @@
           <p class="muted">Study analytics, ML modeling, research automation and reporting.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- USE CASES -->
-  <section class="section">
-    <div class="container split">
-      <div>
-        <h2 class="h2">Pilot-ready use cases</h2>
-        <p class="muted" style="line-height:1.7">
-          Start with a 3-month pilot. Prove impact. Then scale across brands, regions, and teams.
-        </p>
-        <div class="cta" style="margin-top:14px">
-          <div>
-            <strong>Want a pilot built for your current data exports?</strong>
-            <div class="muted small" style="margin-top:6px">We can launch an MVP in 4–6 weeks with your existing Excel/CSV workflows.</div>
-          </div>
-          <a class="btn btn-primary" href="./contact.html">Request Demo</a>
+      <div class="cta" style="margin-top:22px">
+        <div>
+          <strong>Want a pilot built for your current data exports?</strong>
+          <div class="muted small" style="margin-top:6px">We can launch an MVP in 4–6 weeks with your existing Excel/CSV workflows.</div>
         </div>
-      </div>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3>RxIntel™</h3>
-          <p class="muted">Prescription & market intelligence dashboards + alerts.</p>
-        </div>
-        <div class="card">
-          <h3>AI Agent Assist</h3>
-          <p class="muted">Internal assistant for analytics questions + report generation.</p>
-        </div>
-        <div class="card">
-          <h3>Competitive Signals</h3>
-          <p class="muted">Detect sudden regional shifts and brand movement early.</p>
-        </div>
-        <div class="card">
-          <h3>Research Studio</h3>
-          <p class="muted">ML models, study design analytics, automated summaries.</p>
-        </div>
+        <a class="btn btn-primary" href="./contact.html">Request Demo</a>
       </div>
     </div>
   </section>
@@ -202,14 +209,6 @@
       </div>
 
       <div class="small">
-        <div style="font-weight:700;margin-bottom:10px;color:rgba(234,240,255,.9)">Pages</div>
-        <div style="display:grid;gap:8px">
-          <a href="./solutions.html">Solutions</a>
-          <a href="./products.html">Products</a>
-          <a href="./research.html">Research</a>
-          <a href="./contact.html">Contact</a>
-        </div>
-
         <div style="margin-top:14px;color:rgba(234,240,255,.65)">
           © <span id="year"></span> Rebiconn. All rights reserved.
         </div>
@@ -225,7 +224,20 @@
   </footer>
 
   <script>
+    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      const isOpen = menu.style.display === "block";
+      menu.style.display = isOpen ? "none" : "block";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      btn.textContent = isOpen ? "☰ Menu" : "✕ Close";
+    });
   </script>
+
 </body>
 </html>
