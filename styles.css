@@ -182,3 +182,46 @@ textarea.input{min-height:120px;resize:vertical}
   .nav-links{display:none}
   .mobile-btn{display:inline-flex}
 }
+
+.hero-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:40px;
+}
+
+.hero-card{
+  padding:22px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.12);
+  background: linear-gradient(135deg, rgba(99,102,241,.15), rgba(20,184,166,.10));
+  backdrop-filter: blur(14px);
+  transition:.25s ease;
+}
+
+.hero-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 25px 60px rgba(20,184,166,.25);
+  border-color:rgba(20,184,166,.4);
+}
+
+.hero-icon{
+  font-size:26px;
+  margin-bottom:12px;
+}
+
+.hero-card h4{
+  margin:0 0 10px;
+  font-size:18px;
+}
+
+.hero-card p{
+  margin:0;
+  font-size:14px;
+  color:rgba(234,240,255,.75);
+  line-height:1.6;
+}
+
+@media (max-width: 920px){
+  .hero-cards{grid-template-columns:1fr;}
+}
