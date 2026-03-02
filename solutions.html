@@ -4,111 +4,215 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Solutions — Rebiconn</title>
+  <meta name="description" content="Rebiconn solutions for pharmaceutical companies, medical teams, and research workflows in Bangladesh." />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="./index.html"><span class="brand-mark"></span><span>REBICONN</span></a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="./solutions.html">Solutions</a>
-      <a href="./products.html">Products</a>
-      <a href="./research.html">Research</a>
-      <a href="./contact.html">Contact</a>
-      <a href="./contact.html" class="btn btn-primary">Request Demo</a>
-    </nav>
-    <a class="btn mobile-toggle" href="./contact.html">Request Demo</a>
-  </div>
-</header>
+  <!-- NAV (same as homepage with mobile menu) -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html" aria-label="Rebiconn home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>REBICONN</span>
+      </a>
 
-<section class="page-hero">
-  <div class="container">
-    <span class="badge">Solutions</span>
-    <h1 class="h1" style="font-size:42px;margin-top:10px">AI solutions built for pharma reality.</h1>
-    <p class="sub">
-      Rebiconn delivers enterprise-grade AI that aligns with Bangladesh pharma workflows—fast adoption, clear ROI, and secure deployment.
-    </p>
-  </div>
-</section>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./solutions.html">Solutions</a>
+        <a href="./products.html">Products</a>
+        <a href="./research.html">Research</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="btn btn-primary">Request Demo</a>
+      </nav>
 
-<section class="section">
-  <div class="container">
-    <h2 class="h2">For Pharmaceutical Companies</h2>
-    <div class="grid-3" style="margin-top:14px">
-      <div class="card">
-        <h3>Prescription & Market Intelligence</h3>
-        <ul class="ul">
-          <li>Brand momentum + switching insights</li>
-          <li>Territory performance heatmaps</li>
-          <li>Competitor movement alerts</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Commercial Analytics</h3>
-        <ul class="ul">
-          <li>MR effectiveness & coverage scoring</li>
-          <li>Doctor segmentation (loyal / switcher / growth)</li>
-          <li>Campaign impact measurement</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Insight Assistant (NLP)</h3>
-        <ul class="ul">
-          <li>Ask questions in natural language</li>
-          <li>Auto-generated summaries and charts</li>
-          <li>Report drafting for leadership</li>
-        </ul>
-      </div>
+      <button class="mobile-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰ Menu
+      </button>
     </div>
 
-    <h2 class="h2" style="margin-top:34px">For Medical Teams & Doctors</h2>
-    <div class="grid-3" style="margin-top:14px">
-      <div class="card">
-        <h3>Clinical Insight Tools</h3>
-        <p class="muted">Decision support utilities and knowledge workflows for healthcare teams.</p>
-      </div>
-      <div class="card">
-        <h3>Omnichannel Support (Optional)</h3>
-        <p class="muted">AI-powered patient/doctor interaction workflows when appropriate for your product.</p>
-      </div>
-      <div class="card">
-        <h3>Evidence Summarization</h3>
-        <p class="muted">Rapid summarization and structuring of medical content for internal use.</p>
+    <div class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
+      <div class="container">
+        <a href="./solutions.html">Solutions</a>
+        <a href="./products.html">Products</a>
+        <a href="./research.html">Research</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="btn btn-primary" style="width:fit-content;">Request Demo</a>
       </div>
     </div>
+  </header>
 
-    <div class="cta" style="margin-top:28px">
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Solutions</span>
+      <h1 class="h1" style="font-size:44px;margin-top:12px">AI solutions built for pharma reality.</h1>
+      <p class="sub" style="max-width:80ch">
+        Rebiconn delivers enterprise-grade AI aligned with Bangladesh pharma workflows—fast adoption, clear ROI, and secure deployment.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="section">
+    <div class="container">
+
+      <h2 class="h2">For Pharmaceutical Companies</h2>
+      <p class="muted" style="max-width:80ch;line-height:1.7;margin-top:6px">
+        Intelligence systems designed for commercial performance: territory insights, HCP segmentation, competitor monitoring,
+        and natural-language analytics.
+      </p>
+
+      <div class="grid-3" style="margin-top:18px">
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-prescription.png" alt="Prescription & market intelligence visualization">
+          </div>
+          <h3>Prescription & Market Intelligence</h3>
+          <p class="muted">Track signals that move the market—switching, momentum, territory performance, and competitor activity.</p>
+          <ul class="ul">
+            <li>Brand momentum + switching insights</li>
+            <li>Territory performance heatmaps</li>
+            <li>Competitor movement alerts</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-commercial.png" alt="Commercial analytics dashboard visualization">
+          </div>
+          <h3>Commercial Analytics</h3>
+          <p class="muted">Measure execution quality across teams and territories with reliable analytics and scoring.</p>
+          <ul class="ul">
+            <li>MR effectiveness & coverage scoring</li>
+            <li>Doctor segmentation (loyal / switcher / growth)</li>
+            <li>Campaign impact measurement</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-nlp.png" alt="Insight assistant and NLP analytics visualization">
+          </div>
+          <h3>Insight Assistant (NLP)</h3>
+          <p class="muted">Ask questions in natural language. Get structured outputs: summaries, charts, and decision-ready briefs.</p>
+          <ul class="ul">
+            <li>Ask questions in natural language</li>
+            <li>Auto-generated summaries and charts</li>
+            <li>Report drafting for leadership</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h2 class="h2" style="margin-top:42px">For Medical Teams & Doctors</h2>
+      <p class="muted" style="max-width:80ch;line-height:1.7;margin-top:6px">
+        Tools that help medical teams move faster—knowledge workflows, clinical content structuring, and optional patient-facing automation
+        when appropriate.
+      </p>
+
+      <div class="grid-3" style="margin-top:18px">
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-clinical.png" alt="Clinical insight tools visualization">
+          </div>
+          <h3>Clinical Insight Tools</h3>
+          <p class="muted">
+            Decision-support utilities and knowledge workflows for healthcare teams (internal, governed, and traceable).
+          </p>
+          <ul class="ul">
+            <li>Clinical knowledge search & retrieval</li>
+            <li>Structured note & guideline workflows</li>
+            <li>Evidence-linked outputs for review</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-omnichannel.png" alt="Omnichannel support workflow visualization">
+          </div>
+          <h3>Omnichannel Support (Optional)</h3>
+          <p class="muted">
+            AI-driven support experiences across channels—designed with routing and escalation where needed.
+          </p>
+          <ul class="ul">
+            <li>Web / WhatsApp / Messenger workflows</li>
+            <li>24/7 routine query handling</li>
+            <li>Escalation to human teams</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="./solution-evidence.png" alt="Evidence summarization visualization">
+          </div>
+          <h3>Evidence Summarization</h3>
+          <p class="muted">
+            Rapid summarization and structuring of medical content for internal use, with consistent formatting.
+          </p>
+          <ul class="ul">
+            <li>Summaries for leadership briefs</li>
+            <li>Extraction of key findings and tables</li>
+            <li>Standardized internal knowledge packs</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="cta" style="margin-top:34px">
+        <div>
+          <strong>Not sure where to start?</strong>
+          <div class="muted small" style="margin-top:6px">We’ll recommend a pilot use-case based on your current data exports.</div>
+        </div>
+        <a class="btn btn-primary" href="./contact.html">Request Demo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
       <div>
-        <strong>Not sure where to start?</strong>
-        <div class="muted small" style="margin-top:6px">We’ll recommend a pilot use-case based on your current data exports.</div>
+        <div class="brand" style="margin-bottom:10px">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>REBICONN</span>
+        </div>
+        <div class="small">Innovation with Intelligence</div>
+        <div class="small" style="margin-top:10px">
+          Website: <a href="https://www.rebiconn.com" style="text-decoration:underline;opacity:.9">www.rebiconn.com</a>
+        </div>
       </div>
-      <a class="btn btn-primary" href="./contact.html">Request Demo</a>
-    </div>
-  </div>
-</section>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="brand" style="margin-bottom:10px">
-        <span class="brand-mark"></span><span>REBICONN</span>
-      </div>
-      <div class="small">Innovation with Intelligence</div>
-      <div class="small" style="margin-top:10px">
-        Website: <a href="https://www.rebiconn.com" style="text-decoration:underline;opacity:.9">www.rebiconn.com</a>
-      </div>
-    </div>
-    <div class="small">
-      © <span id="year"></span> Rebiconn. All rights reserved.
-      <div class="small" style="margin-top:10px">
-        Site developed by
-        <a href="https://rezoansultan.com" target="_blank" rel="noopener" style="text-decoration:underline;opacity:.9">Rezoan Sultan</a>
-      </div>
-    </div>
-  </div>
-</footer>
+      <div class="small">
+        <div style="margin-top:14px;color:rgba(234,240,255,.65)">
+          © <span id="year"></span> Rebiconn. All rights reserved.
+        </div>
 
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+        <div class="small" style="margin-top:10px">
+          Site developed by
+          <a href="https://rezoansultan.com" target="_blank" rel="noopener" style="text-decoration:underline;opacity:.9">
+            Rezoan Sultan
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      const isOpen = menu.style.display === "block";
+      menu.style.display = isOpen ? "none" : "block";
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      btn.textContent = isOpen ? "☰ Menu" : "✕ Close";
+    });
+  </script>
+
 </body>
 </html>
